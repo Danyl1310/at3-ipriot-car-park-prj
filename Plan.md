@@ -5,10 +5,9 @@ classDiagram
     
 class Carpark {
     +String location
+    +Int Capacity
     +List[plates]
     +List[displays]
-    +Int total-spaces
-    +Int available-spaces
     +addCar()
     +removeCar()
     +updateDisplays(plate)
