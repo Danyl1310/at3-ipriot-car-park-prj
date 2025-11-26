@@ -6,10 +6,10 @@ classDiagram
 class Carpark {
     +String location
     +Int Capacity
-    +List[plates]
-    +List[displays]
-    +addCar()
-    +removeCar()
+    +List[plate]
+    +List[display]
+    +add_car(plate)
+    +remove_car(plate)
     +updateDisplays(plate)
     +updateDisplaycMsg(message)
     
@@ -29,9 +29,10 @@ class Sensor {
     +sensePlate()
     +updateCpark(plate)
 }
-Sensor <|.. Entrysensor
-Sensor <|.. Exitsensor
+Sensor <|.. Entry_Sensor
+Sensor <|.. Exit_Sensor
 Carpark *-- Display
 Carpark <-- Sensor
+Temp_Sensor ..|> Display
 
 ```
