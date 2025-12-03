@@ -16,7 +16,6 @@ class Carpark {
 }
 
 class Display {
-    +String cmessage
     +String message
     +Bool is_on
     +updateDisplay()

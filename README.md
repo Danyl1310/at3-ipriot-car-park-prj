@@ -51,5 +51,12 @@ I believe the sensor class or at-least a subclass of class sensor should be resp
 >3. Why do you think we used a dictionary to hold the data we passed the display? List at least one advantage and one disadvantage of this approach.  
 >```I think a dictionary was used to pass the data since it is easier to pass multiple values as one single item but a disadvantage is that the dictionary must contain both values whenever new values need to be added. and any extra information cannot be added```
   
-Evidence of unit test output:
+Evidence of unit test output for car park class:
 ![Unit Tests](/screenshots/Unit-Test-Output.png)
+  
+Evidence of unit test output for display class:
+1. Failure:  
+>![Unit Tests Display Fail](screenshots/Unit-Test-Display-Fail.png)
+2. Fixed:  
+>![Unit Tests Display Success](screenshots/Unit-Test-Display-Success.png)
+

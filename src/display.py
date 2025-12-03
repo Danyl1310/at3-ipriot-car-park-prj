@@ -1,9 +1,9 @@
 # Display class
 class Display:
-    def __init__(self, id, message="", cmessage="", is_on=False):
+    def __init__(self, id, car_park, message="", is_on=False):
         self.id = id
+        self.car_park = car_park
         self.message = message
-        self.cmessage = cmessage
         self.is_on = is_on
 
     def __str__(self):
@@ -12,3 +12,4 @@ class Display:
     def update(self, data):
         for key, value in data.items():
             print(f"{key}: {value}")
+            self.message = value
