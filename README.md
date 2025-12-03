@@ -50,3 +50,6 @@ I believe the sensor class or at-least a subclass of class sensor should be resp
 >```The term attribute, refers to regular attributes like "self.location" in the carpark class. A property refers to a special attribute, called virtual attributes, an example of a virtual attribute is: "available_bays()" in the carpark class, which has the @property decorator, the attribute in the example is different to a normal attribute since it encapsulates the values and the calculations used to get the value it returns.```
 >3. Why do you think we used a dictionary to hold the data we passed the display? List at least one advantage and one disadvantage of this approach.  
 >```I think a dictionary was used to pass the data since it is easier to pass multiple values as one single item but a disadvantage is that the dictionary must contain both values whenever new values need to be added. and any extra information cannot be added```
+  
+Evidence of unit test output:
+![Unit Tests](/screenshots/Unit-Test-Output.png)
