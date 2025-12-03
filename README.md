@@ -60,3 +60,5 @@ Evidence of unit test output for display class:
 2. Fixed:  
 >![Unit Tests Display Success](screenshots/Unit-Test-Display-Success.png)
 
+2.12 question: The car park register method should accept a Sensor (optional) or Display object. It should raise a TypeError if the object is neither a Sensor nor a Display. Before proceeding, think about where you would test this behaviour. Should you test it in the CarPark unit tests or the Display/Sensor unit tests? Why?  
+```The "test_car_park.py" file should contain this test since register is a part of the car park class.```
