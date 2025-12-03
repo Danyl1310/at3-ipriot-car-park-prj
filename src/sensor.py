@@ -3,10 +3,10 @@ import random
 from abc import ABC, abstractmethod
 # Sensor class
 class Sensor(ABC):
-    def __init__(self, id, is_active=False):
+    def __init__(self, id, car_park, is_active=False):
         self.id = id
         self.is_active = is_active
-
+        self.car_park = car_park
     def __str__(self):
         print("Sensor", self.id + ": Status-", "Offline" if self.is_active is False else "Online")
 
